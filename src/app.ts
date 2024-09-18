@@ -79,3 +79,13 @@ class Employee implements Person {
 
 const e = new Employee("tyrex", 23);
 console.log(e.name + " " + e.age);
+
+// types
+
+type User2 = {
+  firstName: string;
+  lastName: string;
+  age: number;
+};
+
+function isVote(user: User) {}
