@@ -56,3 +56,26 @@ function isLegal2(user: User): boolean {
 
 const vote2 = isLegal2(user);
 console.log(vote2);
+
+interface Person {
+  name: string;
+  age: number;
+  greet(phrase: string): void;
+}
+
+class Employee implements Person {
+  name: string;
+  age: number;
+
+  constructor(n: string, a: number) {
+    this.name = n;
+    this.age = a;
+  }
+
+  greet(phrase: string) {
+    console.log(`${phrase} ${this.name}`);
+  }
+}
+
+const e = new Employee("tyrex", 23);
+console.log(e.name + " " + e.age);
