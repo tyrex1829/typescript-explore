@@ -88,9 +88,9 @@ type User2 = {
   age: number;
 };
 
-// union
-
 function isVote(user: User) {}
+
+// union
 
 type StringOrNumber = string | number;
 
@@ -99,3 +99,25 @@ function printID(id: StringOrNumber) {
 }
 printID(123);
 printID("111");
+
+// Intersaction
+
+type Employeee = {
+  name: string;
+  startDate: Date;
+};
+type Manager = {
+  name: string;
+  department: string;
+};
+type TeamLead = Employeee & Manager;
+
+const teamLead: TeamLead = {
+  name: "Saksham Khare",
+  startDate: new Date(),
+  department: "Software Developer",
+};
+
+console.log(
+  `Name: ${teamLead.name}, Start Date: ${teamLead.startDate}, Department: ${teamLead.department}`
+);
