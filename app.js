@@ -10,3 +10,11 @@ function sumOfTwoNumber(a, b) {
 }
 const ans = sumOfTwoNumber(1, 2);
 console.log(ans);
+function isLegal(age) {
+    if (age < 18) {
+        return false;
+    }
+    return true;
+}
+const vote = isLegal(20);
+console.log(vote);
