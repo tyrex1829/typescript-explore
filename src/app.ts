@@ -121,3 +121,17 @@ const teamLead: TeamLead = {
 console.log(
   `Name: ${teamLead.name}, Start Date: ${teamLead.startDate}, Department: ${teamLead.department}`
 );
+
+// Arrays
+
+function maxNumber(arr: number[]) {
+  let max = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+console.log(maxNumber([1, 2, 3]));
