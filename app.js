@@ -24,3 +24,6 @@ function runAFn(cb) {
 runAFn(() => {
     console.log("cb fn");
 });
+const greetings = (name) => `Hello ${name}!`;
+const display = greetings("Tyrex");
+console.log(display);
