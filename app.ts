@@ -6,3 +6,10 @@ function great(x: String) {
 }
 
 great("Saksham");
+
+function sumOfTwoNumber(a: number, b: number): number {
+  return a + b;
+}
+
+const ans = sumOfTwoNumber(1, 2);
+console.log(ans);
