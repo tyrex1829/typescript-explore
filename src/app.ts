@@ -88,4 +88,14 @@ type User2 = {
   age: number;
 };
 
+// union
+
 function isVote(user: User) {}
+
+type StringOrNumber = string | number;
+
+function printID(id: StringOrNumber) {
+  console.log(`ID: ${id}`);
+}
+printID(123);
+printID("111");
