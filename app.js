@@ -18,3 +18,9 @@ function isLegal(age) {
 }
 const vote = isLegal(20);
 console.log(vote);
+function runAFn(cb) {
+    setTimeout(cb, 1000);
+}
+runAFn(() => {
+    console.log("cb fn");
+});

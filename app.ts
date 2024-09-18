@@ -23,3 +23,11 @@ function isLegal(age: number): boolean {
 
 const vote: boolean = isLegal(20);
 console.log(vote);
+
+function runAFn(cb: () => void) {
+  setTimeout(cb, 1000);
+}
+
+runAFn(() => {
+  console.log("cb fn");
+});
