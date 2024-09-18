@@ -35,3 +35,24 @@ runAFn(() => {
 const greetings = (name: String) => `Hello ${name}!`;
 const display = greetings("Tyrex");
 console.log(display);
+
+interface User {
+  firstName: string;
+  lastName: string;
+  email?: string;
+  age: number;
+}
+
+const user: User = {
+  firstName: "Saksham",
+  lastName: "Khare",
+  age: 23,
+};
+
+function isLegal2(user: User): boolean {
+  if (user.age < 18) return false;
+  return true;
+}
+
+const vote2 = isLegal2(user);
+console.log(vote2);
