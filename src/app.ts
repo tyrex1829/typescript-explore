@@ -205,6 +205,8 @@ console.log(Tyrex);
 //
 //
 
+// Recap
+
 interface admin {
   name: string;
   age: number;
@@ -226,3 +228,25 @@ const result = sumOfAge(
 );
 
 console.log(result);
+
+// Pick
+
+interface admin1 {
+  id: string;
+  name: string;
+  age: number;
+  email: string;
+  password: string;
+}
+
+type pickedAdmin1 = Pick<admin1, "name" | "age" | "email">;
+
+function displayProfile(user: pickedAdmin1) {
+  console.log(`Name: ${user.name}, age: ${user.age}, email: ${user.email}`);
+}
+
+displayProfile({
+  name: "xyz",
+  age: 987,
+  email: "xyz",
+});
