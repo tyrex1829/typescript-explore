@@ -250,3 +250,25 @@ displayProfile({
   age: 987,
   email: "xyz",
 });
+
+// Partial
+
+interface admin2 {
+  id: string;
+  name: string;
+  age: number;
+  email: string;
+  password: string;
+}
+
+type pickedAdmin2 = Pick<admin2, "name" | "age" | "email">;
+
+type pickedAdmin2Partial = Partial<pickedAdmin2>;
+
+function displayProfile2(user: pickedAdmin2Partial) {
+  console.log(`Name: ${user.name}, age: ${user.age}, email: ${user.email}`);
+}
+
+displayProfile2({
+  name: "xyz",
+});
