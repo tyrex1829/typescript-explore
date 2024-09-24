@@ -183,3 +183,12 @@ function firstEle<T>(arg: T[]): T {
 const value = firstEle<string>(["Tyrex", "Saksham"]);
 const value2 = firstEle<number>([1, 2, 3]);
 console.log(value + " " + value2);
+
+//
+
+function firstEle1<T>(arg: T[]): T {
+  return arg[0];
+}
+
+const answer = firstEle1<string>(["xyz", "zyx"]);
+console.log(answer.toUpperCase());
