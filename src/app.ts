@@ -356,3 +356,16 @@ usersMap.set("abchdu", { id: 5, name: "vhbvs" });
 usersMap.set("cahbfcyta", { id: 8, name: "vschvfstc" });
 
 console.log(usersMap.get("abchdu"));
+
+// exclude
+
+type EventType = "click" | "scroll" | "mousemove";
+type ExcludeEventType = Exclude<EventType, "scroll">;
+
+const handleEvent = (event: ExcludeEventType) => {
+  console.log(`Handling event: ${event}`);
+};
+
+handleEvent("click");
+// handleEvent("scroll");   Error
+handleEvent("mousemove");
