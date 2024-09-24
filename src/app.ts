@@ -135,3 +135,31 @@ function maxNumber(arr: number[]) {
 }
 
 console.log(maxNumber([1, 2, 3]));
+
+// Enums
+
+enum Direction {
+  Up,
+  Down,
+  Left,
+  Right,
+}
+
+function doSomething(keyPressed: Direction) {
+  if (keyPressed == Direction.Up) {
+    console.log("up");
+  } else if (keyPressed == Direction.Right) {
+    console.log("right");
+  } else if (keyPressed == Direction.Down) {
+    console.log("down");
+  } else if (keyPressed == Direction.Left) {
+    console.log("left");
+  } else {
+    console.log("not recogonized");
+  }
+}
+
+doSomething(Direction.Up);
+doSomething(Direction.Down);
+console.log(Direction.Down);
+console.log(Direction.Up);
