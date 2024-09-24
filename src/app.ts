@@ -195,7 +195,34 @@ console.log(answer.toUpperCase());
 
 // Imports in TS
 
-// if export const a = 1
 import Tyrex, { a } from "./subApp";
 console.log(a);
 console.log(Tyrex);
+
+//
+//
+// More TS APIs
+//
+//
+
+interface admin {
+  name: string;
+  age: number;
+}
+
+function sumOfAge(user1: admin, user2: admin) {
+  return user1.age + user2.age;
+}
+
+const result = sumOfAge(
+  {
+    name: "Saksham",
+    age: 24,
+  },
+  {
+    name: "Tyrex",
+    age: 5,
+  }
+);
+
+console.log(result);
