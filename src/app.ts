@@ -301,7 +301,7 @@ const obj2: Readonly<User4> = {
 
 // obj.age = 5 => Not possible
 
-// Record
+// Record ugly code
 
 type User6 = {
   id: number;
