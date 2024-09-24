@@ -300,3 +300,25 @@ const obj2: Readonly<User4> = {
 };
 
 // obj.age = 5 => Not possible
+
+// Record
+
+type User6 = {
+  id: number;
+  username: string;
+};
+
+type Users = {
+  [key: string]: User6;
+};
+
+const users: Users = {
+  chg: {
+    id: 5,
+    username: "bcbnjdc",
+  },
+  chgdc: {
+    id: 4,
+    username: "bcbnjdcdvd",
+  },
+};
