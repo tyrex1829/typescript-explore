@@ -322,3 +322,23 @@ const users: Users = {
     username: "bcbnjdcdvd",
   },
 };
+
+// record code
+
+interface User7 {
+  id: number;
+  username: string;
+}
+
+type Users2 = Record<string, User7>;
+
+const users2 = {
+  abcd: {
+    id: 5,
+    username: "hc",
+  },
+  cgbysu: {
+    id: 4,
+    username: "hcccc",
+  },
+};
