@@ -332,7 +332,7 @@ interface User7 {
 
 type Users2 = Record<string, User7>;
 
-const users2 = {
+const users2: Users2 = {
   abcd: {
     id: 5,
     username: "hc",
