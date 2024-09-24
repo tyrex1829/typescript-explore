@@ -192,3 +192,10 @@ function firstEle1<T>(arg: T[]): T {
 
 const answer = firstEle1<string>(["xyz", "zyx"]);
 console.log(answer.toUpperCase());
+
+// Imports in TS
+
+// if export const a = 1
+import Tyrex, { a } from "./subApp";
+console.log(a);
+console.log(Tyrex);
