@@ -272,3 +272,31 @@ function displayProfile2(user: pickedAdmin2Partial) {
 displayProfile2({
   name: "xyz",
 });
+
+// Read-Only
+
+// one way to write
+type User3 = {
+  name: string;
+  age: number;
+};
+
+const obj1: Readonly<User3> = {
+  name: "Zy",
+  age: 0.5,
+};
+
+// obj.age = 5 => Not possible
+
+// second way to write
+type User4 = {
+  name: string;
+  age: number;
+};
+
+const obj2: Readonly<User4> = {
+  name: "Zy",
+  age: 0.5,
+};
+
+// obj.age = 5 => Not possible
