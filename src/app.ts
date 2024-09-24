@@ -173,3 +173,13 @@ function args<T>(arg: T): T {
 const out1 = args<string>("Saksham");
 const out2 = args<number>(1000);
 console.log(out1 + " " + out2);
+
+// Generics with array
+
+function firstEle<T>(arg: T[]): T {
+  return arg[0];
+}
+
+const value = firstEle<string>(["Tyrex", "Saksham"]);
+const value2 = firstEle<number>([1, 2, 3]);
+console.log(value + " " + value2);
