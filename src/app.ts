@@ -342,3 +342,17 @@ const users2 = {
     username: "hcccc",
   },
 };
+
+// maps
+
+interface User8 {
+  id: number;
+  name: string;
+}
+
+const usersMap = new Map<string, User8>();
+
+usersMap.set("abchdu", { id: 5, name: "vhbvs" });
+usersMap.set("cahbfcyta", { id: 8, name: "vschvfstc" });
+
+console.log(usersMap.get("abchdu"));
